@@ -11,4 +11,5 @@ source venv/bin/activate
 2. Run app locally:
 ```
 python app/app.py
+http://localhost:5000/
 ```
