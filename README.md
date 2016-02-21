@@ -1,6 +1,6 @@
 # freshtogo
 
-## Setup 
+## Setup
 
 1. Create and load virtualenv:
 ```
@@ -10,5 +10,5 @@ source venv/bin/activate
 
 2. Run app locally:
 ```
-python app.py
+python app/app.py
 ```
