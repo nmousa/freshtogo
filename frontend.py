@@ -19,10 +19,11 @@ frontend = Blueprint('frontend', __name__)
 # navbar has an usual amount of Link-Elements, more commonly you will have a
 # lot more View instances.
 nav.register_element('frontend_top', Navbar(
-    View('Fresh To Go!', '.index'),
+    View('Fresh to Go!', '.index'),
     View('Home', '.index'),
     View('Menu', '.example_form'),
-    Text('Using Flask-Bootstrap {}'.format(FLASK_BOOTSTRAP_VERSION)),
+    # uncomment the line below to display Flask-Bootstrap version
+    #Text('Using Flask-Bootstrap {}'.format(FLASK_BOOTSTRAP_VERSION)),
 ))
 
 
