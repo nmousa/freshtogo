@@ -13,3 +13,9 @@ source venv/bin/activate
 python app/app.py
 http://localhost:5000/
 ```
+
+3. Or Even Better:
+```
+$ pip install -r freshtogo/requirements.txt
+$ flask --app=freshtogo dev
+```
