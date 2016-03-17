@@ -22,6 +22,7 @@ nav.register_element('frontend_top', Navbar(
     View('Fresh to Go!', '.index'),
     View('Home', '.index'),
     View('Menu', '.example_form'),
+    View('Label', '.label'),
     # uncomment the line below to display Flask-Bootstrap version
     #Text('Using Flask-Bootstrap {}'.format(FLASK_BOOTSTRAP_VERSION)),
 ))
@@ -30,6 +31,10 @@ nav.register_element('frontend_top', Navbar(
 @frontend.route('/')
 def index():
     return render_template('index.html')
+
+@frontend.route('/label/', methods=('GET', 'POST'))
+def label():
+    return render_template('label.html')
 
 
 # Shows a long signup form, demonstrating form rendering.
